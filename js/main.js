@@ -2,10 +2,24 @@
   'use strict';
   var vm = new Vue({
     el: '#app',
-    data:{ todos:[
-      'task1',
-      'task2',
-      'task3'
-    ]}
+    data:{ 
+      newItem:'',
+      todos:[
+        'task1',
+        'task2',
+        'task3'
+    ]},
+      // methods: {
+      //   addItem: function(e){
+      //     e.preventDefault();
+      //     this.todos.push(this.newItem);
+      //   }
+      // }
+      methods: {
+        addItem: function(){
+          this.todos.push(this.newItem);
+          this.newItem ='';
+        }
+      }
   });
 })();
