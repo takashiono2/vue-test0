@@ -4,16 +4,17 @@
     el: '#app',
     data:{ 
       newItem:'',
-      todos:[{
-        title: 'task1',
-        isDone: false
-      },{
-        title: 'task2',
-        isDone: false
-      },{
-        title: 'task3',
-        isDone: true
-      }]
+    //   todos:[{
+    //     title: 'task1',
+    //     isDone: false
+    //   },{
+    //     title: 'task2',
+    //     isDone: false
+    //   },{
+    //     title: 'task3',
+    //     isDone: true
+    //   }]
+      todos: []
     },
     methods: {
       addItem: function(){
